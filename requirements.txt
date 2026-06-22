@@ -1,0 +1,6 @@
+numpy==2.5.0
+opencv-python==4.13.0.92
+pypiwin32==223
+pywin32==312
+screen_brightness_control==0.27.2
+WMI==1.5.1

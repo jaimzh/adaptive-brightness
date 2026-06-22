@@ -24,8 +24,9 @@ def get_room_brightness(capture):
 
 
 def adjust_screen_brightness(background_light, current_screen_brightness):
-    # 1. Map raw light to a target percentage
-    calculated_target = int((background_light / 255) *100) # cam brightness returns from 0-255 so we need ot map or convert it to percentage so that we can adjust the brightness scroller
+    # Map raw light to a target percentage
+    #⚠️ i changed this from 100 to 75
+    calculated_target = int((background_light / 255) * 75) # cam brightness returns from 0-255 so we need ot map or convert it to percentage so that we can adjust the brightness scroller
     calculated_target = max(10, calculated_target)  # this is to ensure that target brighness falls withing 10 and above so that it is never pitch black
     
     
